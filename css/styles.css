@@ -77,11 +77,20 @@ hr{
     width:56px;
     height:56px;
 }
+ .top-players :hover .player img{
+
+    transform: scale(1.5) skew(-30deg)  ;
+    transition:transform 2s ease-in-out  ;
+ }
  .player-name{
      margin-left: 16px;
      font-size: 18px;
 
  }
+ /* .player :hover .player-name{
+    transform: scale(1.5) 
+    transition:transform 2s ease-in-out 
+ } */
   /* top blog styles */
 .blogs{
     display: grid;
