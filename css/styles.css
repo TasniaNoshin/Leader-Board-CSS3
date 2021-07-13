@@ -156,7 +156,7 @@ hr{
 }
 /* extra */
 .course {
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 2px 2px 3px grey;
     padding: 1em;
    
     border-radius: 5%;
@@ -206,12 +206,7 @@ hr{
         align-items: center;
         padding: 10px 30px;
      }
-     .nav-list li {
-        margin-right: 15px;
-     }
-     .profile-img img {
-        display: none;
-     }
+    
 
 
     .container{  width: 100%;}
