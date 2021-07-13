@@ -222,10 +222,13 @@ hr{
 /* tablet devices */
 
 @media only screen and (min-width: 668px) and (max-width: 992px){
-    nav{
-        width: 870px;
-    grid-template-columns: repeat(2,1fr);
-    }
+
+   .navigation {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+     }
     .container{
         
          width: 100%;}
