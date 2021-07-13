@@ -10,29 +10,57 @@ body{
 }
 /* header */
 
-nav a{
-    text-decoration: none;
-    margin-right: 15px;
-    
-color: white;
-    font-size: 20px;
-    
-}
-nav{
+header{
+    background: blue;
+    height: 95px;
     display: flex;
-    justify-content: space-between;
-    background-color:#562EFF;
-    width :1440px;
-height: 94px;
-;
-}
+    justify-content: center;}
 
-nav img{
-    width: 51px;
-height: 51px;
-margin-top: 20px;
+    .navigation {
+        width: 870px;
+        display: flex;
+        justify-content: space-between;
+     }
+     .logo {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+     }
 
-}
+
+     .logo img {
+        height: 40px;
+        height: 50px;
+     }
+     .logo-text {
+        color: #ffffff;
+        margin-left: 15px;
+        font-size: 24px;
+     }
+
+     nav {
+        display: flex;
+        align-items: center;
+     }
+    .nav-list{
+        display: flex;
+    }
+    .nav-list li {
+        list-style: none;
+        margin-right: 25px;
+     }
+     .nav-list li a {
+        color: #ffffff;
+        text-decoration: none;
+       
+        padding: 5px;
+     }
+     .nav-list li a:hover {
+        color: #e7e2e2;
+        font-weight: 400;
+     }
+    
+
 
 main{
     display: flex;
@@ -124,7 +152,18 @@ hr{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 24px;
+
 }
+/* extra */
+.course {
+    box-shadow: 5px 5px 10px grey;
+    padding: 1em;
+   
+    border-radius: 5%;
+    width: 90%;
+
+}
+
 
 .course .course-banner img{
     width: 224px;
@@ -156,14 +195,24 @@ hr{
     font-size: 12px;
     padding: 2px;
 }
+
+
 /*---------- media queries---------- */
 /*-------- mobile devices------- */
 @media only  screen and (max-width: 688px){
+    .navigation {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+     }
+     .nav-list li {
+        margin-right: 15px;
+     }
+     .profile-img img {
+        display: none;
+     }
 
-nav{
-    width: 870px;
-    grid-template-columns: repeat(1,1fr);
-}
 
     .container{  width: 100%;}
     .players ,.blogs ,.courses{
